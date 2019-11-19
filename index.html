@@ -14,6 +14,22 @@ o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join
 p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","019c43d6-937a-41e4-b58c-cae6bbb8715c")
 </script>
   
+  <p>Click the button below to trigger an event</p>
+
+
+<p id="placeholder"></p>
+<button onclick="myFunction()">Click to Triger Event</button>       
+
+<script>
+
+function myFunction()
+{
+        document.getElementById("placeholder").innerHTML = 'Event Sent';
+     AF.event({action: 'Sababar_event'})
+}
+</script>
+  
+  
   
 </body>
 </html>
