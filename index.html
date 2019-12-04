@@ -19,13 +19,20 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","019c43d6-
 
 <p id="placeholder"></p>
 <button onclick="myFunction()">Click to Triger Event</button>       
-
+<button onclick="myFunction2()">Click to Triger Event</button>   
+  
 <script>
 
 function myFunction()
 {
         document.getElementById("placeholder").innerHTML = 'Event Sent';
      AF.event({action: 'Sababar_event'})
+}
+  
+  function myFunction2()
+{
+        document.getElementById("placeholder").innerHTML = 'Event Sent';
+     AF.event({action: 'MaNish_event'})
 }
 </script>
   
