@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html>
-<body>
 
-<h1>Maya Oberhard</h1>
-<p>sababa</p>
-<!-- AppsFlyer web SDK -->
+<!doctype html>
+<html>
+<head>
+<title>Our Funky HTML Page</title>
   
-<script>
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html tutorial template">
+  <script>
 !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){
 (t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},
 t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,
@@ -14,33 +14,11 @@ o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join
 p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","019c43d6-937a-41e4-b58c-cae6bbb8715c")
 </script>
   
-  <p>Click the button below to trigger an event</p>
-
-  
-<button onclick="myFunction()">Click to Triger Event</button>       
-  
-<script>
-  <html>
-    <head>
-        <!-- Assume that the server returns a response with details about the newly subscribed user -->
-        <!-- Alternatively, you can extract data from localstorage or cookies,
-            in case data was set in either of them during the subscription process
-        -->
-        <script>window.onload = function(){
-            AF('pba', 'event', {eventType: 'EVENT', eventCategory: 'conversion',eventName: 'SABABA', eventLabel: 'SABABAEVENT'});
-        }
-        </script>
-    </head>
-    <body>
-        <h1>Thank You for Subscribing to Our Newsletter</h1>
-    </body>
-</html>
-
-</script>
-  
-
   
   
   
+</head>
+<body>
+Content goes here.
 </body>
 </html>
