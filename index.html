@@ -19,7 +19,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","019c43d6-
 Hi! welcome to Maya's page :)
  
 <button type="button" onclick="MayaButton">Click here please</button>
-  
+<button type="button" onclick="Function2">Click here please</button>
   
     <script> 
       
@@ -27,11 +27,13 @@ Hi! welcome to Maya's page :)
             AF('pba', 'event', {eventType: 'EVENT', eventCategory: 'conversion',eventName: 'subscription', eventLabel: 'newsletters'});
         };
  
+      
+  var Function2 = function() {
+                  AF('pba', 'event', {eventType: 'IDENTIFY', customUserId:'663274'})    };
+      
+    </script>
+  
 
-function myFunction() {
- document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-</script>
   
 </body>
 </html>
