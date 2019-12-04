@@ -21,22 +21,27 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","019c43d6-
 <p id="placeholder2"></p>
   
 <button onclick="myFunction()">Click to Triger Event</button>       
-<button onclick="myFunction2()">Click to Triger Event</button>   
   
 <script>
+  <html>
+    <head>
+        <!-- Assume that the server returns a response with details about the newly subscribed user -->
+        <!-- Alternatively, you can extract data from localstorage or cookies,
+            in case data was set in either of them during the subscription process
+        -->
+        <script>window.onload = function(){
+            AF('pba', 'event', {eventType: 'EVENT', eventCategory: 'conversion',eventName: 'SABABA', eventLabel: 'SABABAEVENT'});
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Thank You for Subscribing to Our Newsletter</h1>
+    </body>
+</html>
 
-function myFunction()
-{
-        document.getElementById("placeholder").innerHTML = 'Event Sent';
-     AF.event({action: 'Sababar_event'})
-}
-  
-  function myFunction2()
-{
-        document.getElementById("placeholder2").innerHTML = 'Event2 Sent';
-     AF.event({action: 'MaNish_event'})
-}
 </script>
+  
+
   
   
   
